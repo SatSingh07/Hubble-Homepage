@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./sections/Header";
+import Banner from "./sections/Banner";
+import CardGrid from "./sections/CardGrid";
+import Clients from "./sections/Clients";
+import BannerSecondary from "./sections/BannerSecondary";
+import Stats from "./sections/Stats";
+import ScrollSection from "./sections/ScrollSection";
+import GradientSection from "./sections/GradientSection";
+import Tabs from "./sections/Tabs";
+import CallToAction from "./sections/CallToAction";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+	return (
+		<>
+			<Header />
+			<Banner /> 
+			<CardGrid />
+			<Clients />
+			<BannerSecondary />
+			<Stats />
+			<ScrollSection />
+			<GradientSection />
+			<Tabs />
+			<CallToAction />
+		</>
+	);
 }
-
-export default App;

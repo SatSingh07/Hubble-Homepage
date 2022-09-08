@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Tailwind imports */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* End Tailwind imports */
+
+
+/** Custom Tailwind Classes */
+
+@layer utilities {
+    /* .fuzzy {
+        background: url('./images/fuzzy.svg');
+    } */
+  }
+
+/** End Custom Tailwind Classes */
+
+
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Roobert', sans-serif;
+    src: url(./fonts/Roobert-Regular.woff2) format('woff2');
+    src: url(./fonts/Roobert-Regular.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'Roobert', sans-serif;
+    src: url(./fonts/Roobert-Light.woff2) format('woff2');
+    src: url(./fonts/Roobert-Light.ttf) format('ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Roobert', sans-serif;
+    src: url(./fonts/Roobert-Medium.woff2) format('woff2');
+    src: url(./fonts/Roobert-Medium.ttf) format('ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Roobert', sans-serif;
+    src: url(./fonts/Roobert-SemiBold.woff2) format('woff2');
+    src: url(./fonts/Roobert-SemiBold.ttf) format('ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Roobert', sans-serif;
+    src: url(./fonts/Roobert-Bold.woff2) format('woff2');
+    src: url(./fonts/Roobert-Bold.ttf) format('ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Roobert', sans-serif;
+    src: url(./fonts/Roobert-Heavy.woff2) format('woff2');
+    src: url(./fonts/Roobert-Heavy.ttf) format('ttf');
+    font-weight: 800;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* End Fonts */
+
+
+
+/* Default/Base styles*/
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
+body {
+    font-family: 'Roobert', sans-serif;
+    background: theme('colors.darkBlue');
+    color: #fff;
+    font-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* End Default/Base styles*/
