@@ -10,9 +10,12 @@
 /** Custom Tailwind Classes */
 
 @layer utilities {
-    /* .fuzzy {
-        background: url('./images/fuzzy.svg');
-    } */
+    .list-2col {
+        display: grid;
+        grid-template-rows: repeat(5, 1.5rem);
+        grid-auto-flow: column;
+        justify-content: space-between;
+    }
   }
 
 /** End Custom Tailwind Classes */

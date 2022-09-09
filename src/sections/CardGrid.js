@@ -7,7 +7,7 @@ import iconIT from "../images/icon-it.svg";
 export default function CardGrid() {
     return(
         <section className="py-12">
-            <div className="container flex justify-between items-center gap-6">
+            <div className="container flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center gap-6">
                 <Card
                     icon={iconCiso}
                     title="I’m a CISO"

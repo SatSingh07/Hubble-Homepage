@@ -8,24 +8,24 @@ import Button from "../components/Button";
 export default function Banner() {
 
     return(
-        <section className="relative mt-[134px]">
+        <section className="relative mt-[133px] lg:mt-[113px]">
             
-            <div className="flex justify-between items-center container">
-                <div className="w-[54%] relative z-[4]">
-                    <h1 className=" text-[60px] font-normal leading-[1.1em]">Asset intelligence at the speed of businesses</h1>
-                    <p className="text-[22px] mt-8 text-paleBlue">Built for enterprise teams, Hubble’s Technology Intelligence Platform helps you construct a clear map of your technology asset domain and drive digital transformation.</p>
+            <div className="flex flex-col lg:flex-row justify-between items-center container">
+                <div className="w-full lg:w-[54%] relative z-[4]">
+                    <h1 className="text-[42px] lg:text-[60px] text-center lg:text-left font-normal leading-[1.1em]">Asset intelligence at the speed of businesses</h1>
+                    <p className="text-[18px] lg:text-[22px] text-center lg:text-left mt-8 text-paleBlue">Built for enterprise teams, Hubble’s Technology Intelligence Platform helps you construct a clear map of your technology asset domain and drive digital transformation.</p>
 
-                    <div className="mt-8 flex gap-4">
-                        <Button link="/#" target="_self" text="Get started" style={`w-[283px]`}/>
+                    <div className="mt-8 flex gap-4 justify-center lg:justify-start">
+                        <Button link="/#" target="_self" text="Get started" style={`lg:w-[283px]`}/>
                         <Button link="/#" target="_self" text="Why Hubble?" transparent/>
                     </div>
                 </div>
                 
-                <div className="w-[46%] relative">
+                <div className="w-full lg:w-[46%] relative">
                     <div className="relative z-[2]">
-                        <img src={dashboard} alt="huble dashboard" className="relative max-w-[750px] ml-4"/>
-                        <img src={orbits} alt="" className="absolute top-[0] left-[0] w-[460px]"/>
-                        <div className="absolute bottom-0 w-[750px] h-2/5 bg-gradient-to-t from-darkBlue"></div>
+                        <img src={dashboard} alt="huble dashboard" className="relative max-w-full lg:max-w-[750px] ml-0 lg:ml-4"/>
+                        <img src={orbits} alt="" className="absolute top-[0] left-[0] w-[460px] animate-pulse hidden lg:block"/>
+                        <div className="absolute bottom-0 w-full lg:w-[750px] h-2/5 bg-gradient-to-t from-darkBlue hidden lg:block"></div>
                     </div>
 
                     <img src={nebula} alt="" className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-0"/>

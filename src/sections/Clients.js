@@ -4,10 +4,10 @@ import startup from '../images/startup-logo.svg';
 
 export default function Clients() {
     return(
-        <section className="py-20">
+        <section className="py-12 lg:py-20">
             <div className="container overflow-hidden">
 
-                <h3 className=" text-[32px] text-center">Trusted by pioneering enterprise players</h3>
+                <h3 className="text-[28px] lg:text-[32px] text-center">Trusted by pioneering enterprise players</h3>
 
                 <div className="mt-12 flex items-center w-full overflow-hidden relative border-white border-[1px] border-opacity-10 rounded-lg bg-darkBlue">
                     <div className="flex py-8 animate-marquee whitespace-nowrap">

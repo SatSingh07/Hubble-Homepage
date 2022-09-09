@@ -1,9 +1,11 @@
 import Ticker from "../components/Ticker";
+import MainNav from "../components/MainNav";
 import logo from "../images/hubble-logo.svg";
 import Button from "../components/Button";
+import burgerMenu from "../images/icon-burger-menu.svg";
 import { useState, useEffect } from "react";
 
-export default function Header() {
+export default function Header(props) {
     
     const [scroll, setScroll] = useState(false)
 
@@ -22,14 +24,15 @@ export default function Header() {
             <div className="p-6 2xl:px-12 flex justify-between items-center">
                 <a href="/"><img src={logo} alt="hubble logo" /></a>
 
-                <nav className="flex justify-center gap-12 font-light">
-                    <a href="/#" className="hover:text-purple transition duration-500">Platform</a>
-                    <a href="/#" className="hover:text-purple transition duration-500">Solution</a>
-                    <a href="/#" className="hover:text-purple transition duration-500">Resources</a>
-                    <a href="/#" className="hover:text-purple transition duration-500">Company</a>
-                </nav>
+                <div className="hidden lg:block">
+                    <MainNav />
+                </div>
 
-                <Button link="#" target="_self" text="Get a demo"/>
+                <div className="hidden lg:block">
+                    <Button link="#" target="_self" text="Get a demo"/>
+                </div>
+
+                <img src={burgerMenu} alt="" className="block lg:hidden w-6 hover:opacity-75 transition cursor-pointer" onClick={props.mobileMenuClick}/>
             </div>
         </header>
     )
